@@ -3,9 +3,9 @@ import React from 'react'
 const Customers = () => {
   return (
     <div className=''>
-      <div className=' flex flex-wrap container mx-auto px-1 py-2 bg-blue-500'>
+      <div className=' flex flex-wrap container mx-auto px-1 py-2 bg-white'>
         <div className=''>
-          <img src='images/Koki.png' className=' bg-gray-500' />
+          <img src='images/Koki.png' className=' bg-white' />
         </div>
 
 
