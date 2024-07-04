@@ -20,12 +20,12 @@ export default function Footer() {
 
           <div className="socialLogo flex gap-4">
             <img
-              src="../public/images/icons_instagram.png"
+              src="../images/icons_instagram.png"
               className=""
               alt=""
             />
-            <img src="../public/images/icons_facebook.png" alt="" />
-            <img src="../public/images/icons_twitter.png" alt="" />
+            <img src="../images/icons_facebook.png" alt="" />
+            <img src="../images/icons_twitter.png" alt="" />
           </div>
         </div>
 
