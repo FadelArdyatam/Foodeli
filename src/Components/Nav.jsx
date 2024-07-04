@@ -20,7 +20,7 @@ export default function Nav() {// mengirim keluar
             <a href="/" className="hover:text-red-500 font-poppins font-semibold">Contact</a>
           </div>
           <div className="flex space-x-4">
-            <a href="/" className="hover:text-red-500">
+            <a href="/" className="hover:text-red-500 items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -35,11 +35,9 @@ export default function Nav() {// mengirim keluar
                   d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
                 />
               </svg>
-              0
             </a>
-            <a href="/" className="hover:text-red-500">LB</a>
             <button
-              className="bg-red-500 hover:bg-red-1000 w-28 text-white font-bold py-2 px-4 rounded-full cursor-pointer ">Login</button>
+              className="bg-red-500 hover:bg-red-1000 w-28 items-center text-white font-bold py-2 px-4 rounded-full cursor-pointer ">Login</button>
           </div>
         </div>
       </nav>
