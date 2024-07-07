@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const menuItems = [
     {
@@ -44,27 +44,33 @@ const ShowMenu = () => {
                             </span>
                             <span className="ml-3">Pizza</span>
                         </button>
+
                         <div className="flex space-x-11 items-center">
-                            <button className="flex items-center text-black hover:text-red-500 font-poppins font-semibold py-3 px-10 rounded-lg my-2">
-                                <span className=" p-1">
-                                    <img src=" public/images/Burger.png" alt="Pizza" className="w-6 h-6" />
+                            <button className="flex items-center text-black hover:bg-red-500 hover:rounded-full hover:text-white font-poppins font-semibold py-3 px-10 rounded-lg my-2">
+                                <span className="p-1">
+                                    <img src="images/burger.png" alt="Burger" className="w-6 h-6" />
                                 </span>
                                 <span className="ml-3">Burger</span>
                             </button>
 
-                            <button className="flex items-center text-black hover:text-red-500 font-poppins font-semibold py-3 px-10 rounded-lg my-2">
+                            <button className="flex items-center text-black hover:bg-red-500 hover:rounded-full hover:text-white font-poppins font-semibold py-3 px-10 rounded-lg my-2">
                                 <span className=" p-1">
-                                    <img src="public/images/Cupcake.png" alt="Pizza" className="w-6 h-6" />
+                                    <img src="images/Cupcake.png" alt="Cupcake" className="w-6 h-6" />
                                 </span>
                                 <span className="ml-3">Cupcake</span>
                             </button>
 
-                            <button className="flex items-center text-black hover:text-red-500 font-poppins font-semibold py-3 px-10 rounded-lg my-2">
+                            <button className="flex items-center text-black hover:bg-red-500 hover:rounded-full hover:text-white font-poppins font-semibold py-3 px-10 rounded-lg my-2">
                                 <span className=" p-1">
-                                    <img src="public/images/Ramen.png" alt="Pizza" className="w-6 h-6" />
+                                    <img src="images/Ramen.png" alt="Ramen" className="w-6 h-6" />
                                 </span>
                                 <span className="ml-3">Ramen</span>
                             </button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div className="flex">
                         </div>
                     </div>
 
