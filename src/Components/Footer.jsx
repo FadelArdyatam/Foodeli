@@ -114,9 +114,9 @@ export default function Footer() {
               <a href="_blank">We'd love to hear from you</a>
             </li>
           </ul>
-          <a href="" className="p-6">
+          <a href="#" className="p-6">
             <div className="email border-2 px-2 py-3 rounded-full justify-between flex ">
-              <h1>Email Address</h1>
+              <h1 >Email Address</h1>
               <img src="../public/images/carbon_send.png" alt="" />
             </div>
           </a>
