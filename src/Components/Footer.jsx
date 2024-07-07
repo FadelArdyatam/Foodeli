@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     // CONTAINER FOOTER FOODELI
     <div className="flex justify-center">
-      <div className="container flex justify-between w-full p-16">
+      <div className="container flex justify-between w-full px-4 py-3">
         {/* FOODELI */}
         <div className="foodeli w-56  ">
           <div className="foodeli flex items-center text-center gap-3">
@@ -111,7 +111,7 @@ export default function Footer() {
               <a href="_blank">Question or feedback.?</a>
             </li>
             <li>
-              <a href="_blank">We'd love to hear from you</a>
+              <a href="_blank">We love to hear from you</a>
             </li>
           </ul>
           <a href="" className="p-6">

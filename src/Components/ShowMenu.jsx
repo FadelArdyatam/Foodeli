@@ -1,6 +1,6 @@
 
 
-const menuItems = [
+const Pizzas = [
     {
         id: 1,
         name: "California Pizza",
@@ -27,17 +27,98 @@ const menuItems = [
     },
 ]
 
+const Burgers = [
+    {
+        id: 1,
+        name: "Mac And Cheese",
+        price: 5.5,
+        image: "images/burger-1[1].png",  
+    },
+    {
+        id: 2,
+        name: "Cheese Burger",
+        price: 4.5,
+        image: "images/burger-2[1].png",
+    },
+    {
+        id: 3,
+        name: "Beef Burger",
+        price: 6.5,
+        image: "images/burger-3[1].png",
+    },
+    {
+        id: 4,
+        name: "Cheese Burger",
+        price: 4.5,
+        image: "images/burger-4[1].png",
+        }
+]
+
+const Cupcakes = [
+    {
+        id: 1,
+        name: "Cupcake",
+        price: 3.5,
+        image: "images/cupcake-1[1].png",
+    },
+    {
+        id: 2,
+        name: "Cupcake",
+        price: 3.5,
+        image: "images/cupcake-2[1].png",
+    },
+    {
+        id: 3,
+        name: "Cupcake",
+        price: 3.5,
+        image: "images/cupcake-3[1].png",
+    },
+    {
+        id: 4,
+        name: "Cupcake",
+        price: 3.5,
+        image: "images/cupcake-4[1].png",
+    }
+]
+
+const Ramens = [
+    {
+        id: 1,
+        name: "Ramen",
+        price: 3.5,
+        image: "images/ramen-1[1].png",
+    },
+    {
+        id: 2,
+        name: "Ramen",
+        price: 3.5,
+        image: "images/ramen-2[1].png",
+    },
+    {
+        id: 3,
+        name: "Ramen",
+        price: 3.5,
+        image: "images/ramen-3[1].png",
+    },
+    {
+        id: 4,
+        name: "Ramen",
+        price: 3.5,
+        image: "images/ramen-4[1].png",
+    }
+]
+
 const ShowMenu = () => {
     return (
-        <div className=''>
-            <div className='container mx-auto px-4 py-2 bg-white content-center'>
-                <div className=' bg-white'>
+        <div className='px-4 py-3 mx-auto justify-center content-center m-11'>
+            <div className='container bg-white pl-6'>
+                <div className='px-4 py-3'>
                     <p className=' font-bold text-red-500 mb-1'>OUR MENU</p>
                     <p className=' text-3xl text-bold '>Menu That Always <br /> Makes Youe Fall In Love </p>
                 </div>
 
-                <div className='px-1 mt-2'>
-                    <div className='flex gap-3'>
+                <div className='px-4 m-3'>
+                    <div className='flex gap-3 items-center text-black hover:b'>
                         <button className="flex items-center bg-red-500 text-white font-semibold py-3 px-10 rounded-2xl my-2">
                             <span className="bg-white rounded-full p-1">
                                 <img src="https://twemoji.maxcdn.com/v/latest/72x72/1f355.png" alt="Pizza" className="w-6 h-6" />
@@ -68,17 +149,62 @@ const ShowMenu = () => {
                             </button>
                         </div>
                     </div>
-
                     <div>
                         <div className="flex">
                         </div>
                     </div>
+                    
+                    
+                    <div className="mt-10">
+                        <div className="flex px-4 justify-center">
+                            <div className=" flex gap-8 flex-wrap ">
+                                {Pizzas.map((item) => (
+                                    <div key={item.id} className=" card-menu border text-center py-10 px-10 rounded-2xl font-thin">
+                                        <img src={item.image} alt="" />
+                                        <h1>{item.name}</h1>
+                                        {/* INII NAMANYA MAPPING */}
+                                        <p>${item.price}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
 
-                    <div>
-                        <div className="flex">
-                            <div className="flex gap-8 flex-wrap justify-center">
-                                {menuItems.map((item) => (
-                                    <div key={item.id} className="card-menu border border-gray-300 text-center py-10 px-10 rounded-2xl font-thin">
+                    <div className="hidden">
+                        <div className="flex px-4 justify-center">
+                            <div className=" flex gap-8 flex-wrap ">
+                                {Burgers.map((item) => (
+                                    <div key={item.id} className=" card-menu border text-center py-10 px-10 rounded-2xl font-thin">
+                                        <img src={item.image} alt="" />
+                                        <h1>{item.name}</h1>
+                                        {/* INII NAMANYA MAPPING */}
+                                        <p>${item.price}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="hidden">
+                        <div className="flex px-4 justify-center">
+                            <div className=" flex gap-8 flex-wrap ">
+                                {Cupcakes.map((item) => (
+                                    <div key={item.id} className=" card-menu border text-center py-10 px-10 rounded-2xl font-thin">
+                                        <img src={item.image} alt="" />
+                                        <h1>{item.name}</h1>
+                                        {/* INII NAMANYA MAPPING */}
+                                        <p>${item.price}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="hidden">
+                        <div className="flex px-4 justify-center">
+                            <div className=" flex gap-8 flex-wrap ">
+                                {Ramens.map((item) => (
+                                    <div key={item.id} className=" card-menu border text-center py-10 px-10 rounded-2xl font-thin">
                                         <img src={item.image} alt="" />
                                         <h1>{item.name}</h1>
                                         {/* INII NAMANYA MAPPING */}
